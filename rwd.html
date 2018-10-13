@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximu">
+<title>undone_RWD 回應式設計_HsinYu</title>
+<link rel="stylesheet" type="text/css" href="rwd_style.css" media="all">
+
+<script>
+function showMenu(){
+	let menu=document.querySelector(".menu");
+	menu.style.left="0px";
+}
+function hideMenu(){
+	let menu=document.querySelector(".menu");
+	menu.style.left="-200px";
+}
+</script>
+</head>
+<body>
+<!--
+	1200px 以上:電腦版
+	500px ~ 1200p:平板
+	500px 以下:手機
+-->
+	<nav>
+		<div onclick="showMenu();" class="trigger"><img src="hamburger_menu.png" height="24px" width="24px"></div>
+		<img src="logo.png" class="logo"/>
+		<div class="menu" onmouseleave="hideMenu();">
+			<div class="item">Home</div>
+			<div class="item">Events</div>
+			<div class="item">Product Index</div>
+		</div>
+	</nav>
+	<header class="top_header">
+		<div class="title">
+				Build <b>anything</b> with Google
+		</div>
+		<div class="search_wrapper">
+			<input id="search" placeholder="搜尋產品和說明文件"/>
+		</div>
+	</header>
+	<main>
+		<div class="frame_events">
+			<div class="frame_header">
+				<h2 style="width:80%">Events</h2>
+				<a class="veiw_btn">VEIW ALL</a>
+			</div>
+			<div class="group">
+				<div class="box">
+					<img src="1.png"/>
+					<div class="item_text">
+						<a href=""><h3>Firebase Summit 2018<br/>
+						October 29 | Prague, Czech Republic</h3></a>
+						<div>Join us to learn how Firebase helps mobile app 
+						teams of all sizes across the entire development lifecycle.
+							<br/><br/>#FirebaseSummit
+						</div>
+						<a href="">LEARN MORE</a>
+					</div>
+				</div>
+				<div class="box">
+					<img src="2.png"/>
+					<div class="item_text">
+						<a href=""><h3>Android Dev Summit 2018<br/>
+						November 7-8 | Mountain View, USA</h3></a>
+						<div>
+							Two days of networking and deep technical sessions 
+							with the Android engineering team.
+							<br/><br/>#AndroidDevSummit
+						</div>
+						<a href="">LEARN MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="frame_news">
+			<div class="group">
+				<div class="box">
+					<img src="3.png"/>
+					<div class="item_text">
+						<a href=""><h3>Google I/O Sessions</h3></a>
+						<div>If you didn't have a chance to attend all of your favorite talks, or you want to refresh what you learned at the conference, you can (re)watch recordings of the Keynotes and Sessions on the I/O website at your convenience.
+	We'd love your feedback so we can continue to tailor our content to your needs in future years! To rate a Session you attended and/or watched, sign-in on the I/O website, click on it from the main schedule page, and click the blue Rate session button.</div>
+						<a href="">WATCH SESSIONS</a>
+					</div>
+				</div>
+				<div class="box">
+					<img src="4.png"/>
+					<div class="item_text">
+						<a href="">Hello 1</a>
+						<div>Hello 1</div>
+						<a href="">Hello 1</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frame_news">
+			<div class="group">
+				<div class="box">
+					<iframe  src="https://www.youtube.com/embed/PingeD_5yPQ" frameborder="0" ></iframe>
+					<div class="item_text">
+						<a href=""><h3>Celebrating app makers worldwide</h3></a>
+						<div>Developers, founders, product managers, designers, and others reveal what they do when they step away from their computers.
+	Discover their dreams, passions, and who they are as people.</div>
+						<a href="">LEARN MORE</a><a href=""> GET FEATURED</a>
+					</div>
+				</div>
+				<div class="box">
+					<iframe  src="https://www.youtube.com/embed/ua4QGWmDfB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="item_text">
+						<a href="">Hello 1</a>
+						<div>Hello 1</div>
+						<a href="">Hello 1</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<div class="footer_box">
+				<ul >
+					<label>連結</label>
+					<li><a href=""><label>網誌</li></a>
+					<li><a href=""><label>Facebook</li></a>
+					<li><a href=""><label>Google+</li></a>
+					<li><a href=""><label>Medium</li></a>
+					<li><a href=""><label>Twitter</li></a>
+					<li><a href=""><label>YouTube</li></a>
+				</ul>
+			</div>
+			<div class="footer_box">
+				<ul>
+					<label>計劃</label>
+					<li><a href=""><label>Women Techmakers</li></a>
+					<li><a href=""><label>Agency Program</li></a>
+					<li><a href=""><label>GDG</li></a>
+					<li><a href=""><label>Google Developers Experts</li></a>
+					<li><a href=""><label>Startup Launchpad</li></a>
+				</ul>
+			</div>
+			<ul class="footer_box">
+				<label>開發人員控制台</label>
+
+				<li><a href=""><label>Google API Console<label></li></a>
+				<li><a href=""><label>Google Cloud Platform Console<label></li></a>
+				<li><a href=""><label>Google Play Console<label></li></a>
+				<li><a href=""><label>Firebase Console<label></li></a>
+				<li><a href=""><label>Actions on Google Console<label></li></a>
+				<li><a href=""><label>Cast SDK Developer Console<label></li></a>
+				<li><a href=""><label>Chrome Web Store Dashboard<label></li></a>
+			</ul>
+			<div class="footer_box" style="background: #37424b;">
+				<img src="logo.png" style="border-bottom: 1px solid #455a64;"/>
+				<ul>
+					<li><a href=""><label>Android</label></a></li>
+					<li><a href=""><label>Chrome</a></li>
+					<li><a href=""><label>Firebase</a></li>
+					<li><a href=""><label>Google Cloud Platform</a></li>
+					<li><a href=""><label>所有產品</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="background-color:#455a64">
+			<div>
+				<select></select>
+				<div>
+					<a>條款</a>
+					|<a> 隱私權</a>
+				</div>
+			</div>
+			<div>
+				<div>
+				
+				</div>
+				<button>
+				
+				</button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
