@@ -60,6 +60,10 @@ footer{
 	color: #cfd8dc;
 	background-color:#303c42;
 }
+.footer_frame{
+	display:flex;
+	width:100%;
+}
 .group{
 	display:flex;
 	width:100%;
@@ -75,7 +79,8 @@ footer{
     position: relative;
 }
 .footer_box{
-	
+	display:block;
+    position: relative;
     flex: 1 0 25%;
     margin: 0;
     padding: 24px 20px 32px
@@ -109,7 +114,7 @@ li{
 	opacity .2s,width .2s,-ms-flex .2s;
     vertical-align: top;
 }
-.frame_events,.frame_news{
+.frame_events,.frame_news,.footer_frame{
 	
 	justify-content:center;
 	align-items:flex-start;padding:0.5%;
@@ -139,7 +144,7 @@ li{
 /* CSS3 Media Query */
 @media	(max-width:1200px){
 	/*如果螢幕小於 1200px，套用這個區塊的設定*/
-	.frame_events,.frame_news,.group,.frame_header{
+	.frame_events,.frame_news,.footer_frame,.group,.frame_header{
 		flex-wrap:wrap
 	}
 	.box,.footer_box{
